@@ -7,7 +7,7 @@ export default class Modal extends Component {
     return (
       <div>
         <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
                 <h1 className="modal-title fs-5" id="exampleModalLabel">Shoes Detail</h1>
@@ -15,7 +15,7 @@ export default class Modal extends Component {
               </div>
               <div className="modal-body">
                 <div className='card'>
-                  <img src={content.image} alt={content.alias} />
+                  <img src={content.image} alt={content.alias} style={{width: '75%', height: '75%'}} />
                   <div className='card-body bg-info'>
                     <p>{content.name}</p>
                     <p>{content.price.toLocaleString()}$</p>
